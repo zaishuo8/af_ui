@@ -1,5 +1,6 @@
 import 'package:af_ui/af_ui.dart';
 import 'package:af_ui_example/src/icon/icon.dart';
+import 'package:af_ui_example/src/search/search.dart';
 import 'package:flutter/material.dart';
 
 import 'src/button/button.dart';
@@ -27,6 +28,8 @@ class ExampleApp extends StatelessWidget {
         '/button': (context) => ButtonExample(),
         '/input': (context) => InputExample(),
         '/icon': (context) => IconExample(),
+        '/search_placeholder': (context) => SearchPlaceholderExample(),
+        '/search': (context) => SearchExample(),
       },
     );
   }

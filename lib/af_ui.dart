@@ -15,7 +15,7 @@ export 'ui/list/index.dart';
 export 'ui/disable/index.dart';
 export 'ui/button/index.dart';
 export 'ui/input/index.dart';
-
+export 'ui/search/index.dart';
 
 /// af_ui style
 export 'config/style.dart';

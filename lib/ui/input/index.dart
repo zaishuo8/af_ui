@@ -250,58 +250,6 @@ class _InputState extends State<AfInput> with WidgetsBindingObserver {
     _focusNode.dispose();
     super.dispose();
   }
-
-  /*@override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        border: Border(
-            bottom: BorderSide(
-          // color: AfColor.Split,
-          width: 0.5,
-        )),
-      ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Expanded(
-            child: TextField(
-              controller: _controller,
-              keyboardType: widget.keyboardType,
-              onChanged: widget.onChanged,
-              decoration: InputDecoration(
-                  hintText: widget.hintText,
-                  hintMaxLines: 1,
-                  border: InputBorder.none,
-                  suffixIcon: (widget.allowClear == true &&
-                          widget.value != null &&
-                          widget.value != '')
-                      ? IconButton(
-                          /// todo 使用自己的 icon
-                          icon: Icon(
-                            Icons.cancel,
-                            // color: AfColor.Disabled,
-                            size: 18,
-                          ),
-                          onPressed: () {
-                            _controller.clear();
-                            widget.onChanged(_controller.text);
-                          },
-                        )
-                      : null),
-            ),
-          ),
-          Offstage(
-            offstage: widget.smsCode != true,
-            child: SmsButton(
-              beforeSmsPressed: widget.beforeSmsPressed,
-              afterSmsPressed: widget.afterSmsPressed,
-            ),
-          ),
-        ],
-      ),
-    );
-  }*/
 }
 
 class SmsButton extends StatefulWidget {

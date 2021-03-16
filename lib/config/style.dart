@@ -45,13 +45,13 @@ class AfLayout {
   static const BoxPaddingS = 12.0; // 内容区域与BOX间距，文字 + 图片/图标等内容
 
   /// 内容元素间距
-  static const ElementMargin0 = 2;
-  static const ElementMargin1 = 4;
-  static const ElementMargin2 = 8;
-  static const ElementMargin3 = 16;
-  static const ElementMargin4 = 24;
-  static const ElementMargin5 = 36;
-  static const ElementMargin6 = 48;
+  static const ElementMargin0 = 2.0;
+  static const ElementMargin1 = 4.0;
+  static const ElementMargin2 = 8.0;
+  static const ElementMargin3 = 16.0;
+  static const ElementMargin4 = 24.0;
+  static const ElementMargin5 = 36.0;
+  static const ElementMargin6 = 48.0;
 }
 
 class AfFont {

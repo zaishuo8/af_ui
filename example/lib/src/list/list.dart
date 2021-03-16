@@ -31,6 +31,10 @@ class ListExample extends StatelessWidget {
                     title: '输入框',
                     onPressed: () { Navigator.pushNamed(context, '/input'); },
                   ),
+                  AfListItem(
+                    title: '搜索框',
+                    onPressed: () { Navigator.pushNamed(context, '/search_placeholder'); },
+                  ),
                 ],
               ),
               AfListGroup(
