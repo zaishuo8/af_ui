@@ -116,10 +116,12 @@ class AfButton extends StatelessWidget {
       return AfTouchableHighlight(
         child: buildContent(context),
         onPressed: () { if (onPressed != null) onPressed(); },
+        borderRadius: BorderRadius.circular(ButtonRadius),
       );
     } else {
       return AfTouchableOpacity(
         child: buildContent(context),
+        borderRadius: BorderRadius.circular(ButtonRadius),
         onPressed: () { if (onPressed != null) onPressed(); },
       );
     }

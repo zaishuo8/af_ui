@@ -149,7 +149,7 @@ class AfListItem extends StatelessWidget {
         /// 可点击 右箭头
         onPressed == null ? Container() : Container(
           margin: EdgeInsets.only(left: AfLayout.BoxPaddingS),
-          child: Icon(AfIcons.right, size: AfFont.Size4, color: AfColor.Black3),
+          child: Icon(AfIcons.arrow_right, size: AfFont.Size4, color: AfColor.Black3),
         ),
       ],
     );

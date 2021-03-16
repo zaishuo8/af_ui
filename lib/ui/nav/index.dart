@@ -63,7 +63,7 @@ class AfNav extends StatelessWidget {
           padding: EdgeInsets.only(left: AfLayout.PagePaddingHorizontal),
           /// todo 加了颜色，可点击区域就是整个左边；不加颜色，可点击区域只有 icon 部分?
           color: AfColor.White,
-          child: Icon(AfIcons.left,
+          child: Icon(AfIcons.arrow_left,
             color: AfColor.Black2,
             size: 24,
           ),

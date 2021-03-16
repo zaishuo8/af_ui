@@ -10,9 +10,13 @@ abstract class _AfTouchable extends StatefulWidget {
   /// 点击事件
   final VoidCallback onPressed;
 
+  /// 圆角大小
+  final BorderRadius borderRadius;
+
   const _AfTouchable({
     Key key,
     this.onPressed,
+    this.borderRadius,
     @required this.child
   }) : super(key: key);
 
@@ -29,9 +33,13 @@ class AfTouchableOpacity extends _AfTouchable {
   /// 点击事件
   final VoidCallback onPressed;
 
+  /// 圆角大小
+  final BorderRadius borderRadius;
+
   const AfTouchableOpacity({
     Key key,
     this.onPressed,
+    this.borderRadius,
     @required this.child
   }) : super(key: key, onPressed: onPressed, child: child);
 
@@ -48,9 +56,13 @@ class AfTouchableHighlight extends _AfTouchable {
   /// 点击事件
   final VoidCallback onPressed;
 
+  /// 圆角大小
+  final BorderRadius borderRadius;
+
   const AfTouchableHighlight({
     Key key,
     this.onPressed,
+    this.borderRadius,
     @required this.child
   }) : super(key: key, onPressed: onPressed, child: child);
 
@@ -122,7 +134,12 @@ class _AfTouchableState extends State<_AfTouchable> {
           widget.child,
           _tapStatus == _AfTapStatus.Down ? Positioned(
             left: 0, right: 0, top: 0, bottom: 0,
-            child: Container(color: tapDownColor),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: widget.borderRadius ?? BorderRadius.circular(0),
+                color: tapDownColor,
+              ),
+            ),
           ) : Container(width: 0, height: 0),
         ],
       ),

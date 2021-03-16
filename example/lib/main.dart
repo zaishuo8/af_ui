@@ -1,9 +1,11 @@
 import 'package:af_ui/af_ui.dart';
+import 'package:af_ui_example/src/icon/icon.dart';
 import 'package:flutter/material.dart';
 
 import 'src/button/button.dart';
 import 'src/input/input.dart';
 import 'src/list/list.dart';
+import 'src/icon/icon.dart';
 
 void main() {
   runApp(ExampleApp());
@@ -24,6 +26,7 @@ class ExampleApp extends StatelessWidget {
         '/list': (context) => ListExample(),
         '/button': (context) => ButtonExample(),
         '/input': (context) => InputExample(),
+        '/icon': (context) => IconExample(),
       },
     );
   }

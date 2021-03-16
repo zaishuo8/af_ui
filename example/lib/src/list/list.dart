@@ -21,7 +21,7 @@ class ListExample extends StatelessWidget {
                   ),
                   AfListItem(
                     title: 'Icons',
-                    description: 'todo',
+                    onPressed: () { Navigator.pushNamed(context, '/icon'); },
                   ),
                 ],
               ),
@@ -37,7 +37,7 @@ class ListExample extends StatelessWidget {
                 children: [
                   AfListItem(
                     title: '列表',
-                    description: 'todo',
+                    description: '当前页面即为列表示例',
                   ),
                 ],
               ),

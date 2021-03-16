@@ -207,7 +207,7 @@ class _InputState extends State<AfInput> with WidgetsBindingObserver {
               child: Container(
                 padding: EdgeInsets.only(left: AfLayout.BoxPaddingS),
                 child: Icon(
-                  AfIcons.close_circle,
+                  AfIcons.error_circle,
                   size: AfFont.Size4, 
                   color: AfColor.Black3,
                 ),
