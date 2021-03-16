@@ -1,0 +1,22 @@
+PODS:
+  - af_ui (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - af_ui (from `.symlinks/plugins/af_ui/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  af_ui:
+    :path: ".symlinks/plugins/af_ui/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  af_ui: 708480cc021e801d7a7559f767b55af12b95c842
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.0

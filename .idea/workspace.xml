@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b48ae7fd-6987-474a-ae2c-d0e46c97e556" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="FMGRX19610011268" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pakJMgc0s8p1BXPRfRWvCDBCov" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/assets/fonts" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/assets/fonts" />
+      <recent name="$PROJECT_DIR$/lib/assets/images" />
+      <recent name="$PROJECT_DIR$/example/lib" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b48ae7fd-6987-474a-ae2c-d0e46c97e556" name="Default Changelist" comment="" />
+      <created>1615428515762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615428515762</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom" timestamp="1615885918862">
+      <screen x="-259" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.0.1440.900/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615885918862" />
+    <state width="1398" height="275" key="GridCell.Tab.0.bottom/0.0.1440.900/-295.-1080.1920.1080@0.0.1440.900" timestamp="1615699464854" />
+    <state width="1398" height="262" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615795525592" />
+    <state width="1878" height="295" key="GridCell.Tab.0.bottom/0.25.1440.809/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615883585848" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center" timestamp="1615885918860">
+      <screen x="-259" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="344" key="GridCell.Tab.0.center/0.0.1440.900/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615885918860" />
+    <state width="1398" height="275" key="GridCell.Tab.0.center/0.0.1440.900/-295.-1080.1920.1080@0.0.1440.900" timestamp="1615699464851" />
+    <state width="1398" height="262" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615795525591" />
+    <state width="1878" height="374" key="GridCell.Tab.0.center/0.25.1440.809/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615465054467" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left" timestamp="1615885918859">
+      <screen x="-259" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="344" key="GridCell.Tab.0.left/0.0.1440.900/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615885918859" />
+    <state width="1398" height="275" key="GridCell.Tab.0.left/0.0.1440.900/-295.-1080.1920.1080@0.0.1440.900" timestamp="1615699464849" />
+    <state width="1398" height="262" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615795525591" />
+    <state width="1878" height="374" key="GridCell.Tab.0.left/0.25.1440.809/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615465054465" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right" timestamp="1615885918861">
+      <screen x="-259" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="344" key="GridCell.Tab.0.right/0.0.1440.900/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615885918861" />
+    <state width="1398" height="275" key="GridCell.Tab.0.right/0.0.1440.900/-295.-1080.1920.1080@0.0.1440.900" timestamp="1615699464853" />
+    <state width="1398" height="262" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615795525592" />
+    <state width="1878" height="374" key="GridCell.Tab.0.right/0.25.1440.809/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615465054480" />
+    <state x="202" y="-904" width="1347" height="790" key="SettingsEditor" timestamp="1615444501616">
+      <screen x="-259" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="202" y="-904" width="1347" height="790" key="SettingsEditor/0.0.1440.900/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615444501616" />
+    <state x="353" y="-905" width="703" height="729" key="find.popup" timestamp="1615455551427">
+      <screen x="-259" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="353" y="-905" width="703" height="729" key="find.popup/0.0.1440.900/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615455551427" />
+    <state x="366" y="-839" key="search.everywhere.popup" timestamp="1615776183087">
+      <screen x="-259" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="366" y="-839" key="search.everywhere.popup/0.0.1440.900/-259.-1080.1920.1080@-259.-1080.1920.1080" timestamp="1615776183087" />
+  </component>
+</project>
