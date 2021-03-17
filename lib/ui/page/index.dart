@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:af_ui/af_ui.dart';
 
@@ -67,6 +68,7 @@ class AfSkeleton extends StatelessWidget {
         return Container(
           color: AfColor.White,
           padding: EdgeInsets.all(AfLayout.BoxPaddingS),
+          /// todo detail 的骨架屏
           child: Row(
             children: [
               // 图片区域
@@ -88,8 +90,43 @@ class AfSkeleton extends StatelessWidget {
       padding: EdgeInsets.symmetric(
         horizontal: AfLayout.PagePaddingHorizontal,
       ),
-      child: Column(
-        children: List.filled(10, 0).map((e) => Container()).toList(),
+      child: SingleChildScrollView(
+        child: Column(
+          children: List.filled(10, 0).map((e) => Container(
+            color: AfColor.White,
+            margin: EdgeInsets.only(top: AfLayout.ModuleMarginVertical),
+            child: Container(
+              padding: EdgeInsets.all(AfLayout.BoxPaddingL),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Expanded(flex: 1, child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: 60,
+                        height: 20,
+                        color: AfColor.Black6,
+                        margin: EdgeInsets.only(bottom: 10),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 20,
+                        color: AfColor.Black6,
+                      ),
+                    ],
+                  )),
+                  Container(
+                    margin: EdgeInsets.only(left: 40),
+                    width: 20,
+                    height: 20,
+                    color: AfColor.Black6,
+                  ),
+                ],
+              ),
+            ),
+          )).toList(),
+        ),
       ),
     );
   }
@@ -108,10 +145,10 @@ class AfFault extends StatelessWidget {
   AfFault(this.description);
   
   /// 默认 空页面 构造函数
-  factory AfFault.empty(String description) => AfFault(description ?? '暂无数据');
+  factory AfFault.empty({String description}) => AfFault(description ?? '暂无数据');
 
   /// 默认 错误页面 构造函数
-  factory AfFault.error(String description) => AfFault(description ?? '哎呀，出错了');
+  factory AfFault.error({String description}) => AfFault(description ?? '哎呀，出错了');
 
   @override
   Widget build(BuildContext context) {

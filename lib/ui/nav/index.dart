@@ -88,7 +88,10 @@ class AfNav extends StatelessWidget {
   Widget buildRight(BuildContext context) {
     return Expanded(
       flex: 3,
-      child: trailing ?? Container(),
+      child: Container(
+        alignment: Alignment.centerRight,
+        child: trailing ?? Container(width: 0, height: 0),
+      ),
     );
   }
 

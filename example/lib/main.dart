@@ -1,12 +1,16 @@
-import 'package:af_ui/af_ui.dart';
-import 'package:af_ui_example/src/icon/icon.dart';
-import 'package:af_ui_example/src/search/search.dart';
 import 'package:flutter/material.dart';
+import 'package:af_ui/af_ui.dart';
 
 import 'src/button/button.dart';
+import 'src/disable/disable.dart';
 import 'src/input/input.dart';
 import 'src/list/list.dart';
 import 'src/icon/icon.dart';
+import 'src/nav/nav.dart';
+import 'src/page/page.dart';
+import 'src/search/search.dart';
+import 'src/tab_nav/search.dart';
+import 'src/touchable/touchable.dart';
 
 void main() {
   runApp(ExampleApp());
@@ -30,6 +34,14 @@ class ExampleApp extends StatelessWidget {
         '/icon': (context) => IconExample(),
         '/search_placeholder': (context) => SearchPlaceholderExample(),
         '/search': (context) => SearchExample(),
+        '/tab_nav': (context) => TabNavExample(),
+        '/disable': (context) => DisableExample(),
+        '/touchable': (context) => TouchableExample(),
+        '/nav': (context) => NavExample(),
+        '/page_controller': (context) => PageControllerExample(),
+        '/page': (context) => PageExample(),
+        '/page_fault': (context) => PageFaultExample(),
+        '/page_skeleton': (context) => PageSkeletonExample(),
       },
     );
   }

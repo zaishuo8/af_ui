@@ -15,13 +15,37 @@ class ListExample extends StatelessWidget {
               AfListGroup(
                 children: [
                   AfListItem(
-                    title: '按钮',
-                    description: '跳转按钮示例页',
-                    onPressed: () { Navigator.pushNamed(context, '/button'); },
+                    title: '图标',
+                    description: '跳转图标示例页',
+                    onPressed: () { Navigator.pushNamed(context, '/icon'); },
                   ),
                   AfListItem(
-                    title: 'Icons',
-                    onPressed: () { Navigator.pushNamed(context, '/icon'); },
+                    title: '禁用',
+                    onPressed: () { Navigator.pushNamed(context, '/disable'); },
+                  ),
+                  AfListItem(
+                    title: '可点击',
+                    onPressed: () { Navigator.pushNamed(context, '/touchable'); },
+                  ),
+                  AfListItem(
+                    title: '按钮',
+                    onPressed: () { Navigator.pushNamed(context, '/button'); },
+                  ),
+                ],
+              ),
+              AfListGroup(
+                children: [
+                  AfListItem(
+                    title: '顶部导航栏',
+                    onPressed: () { Navigator.pushNamed(context, '/nav'); },
+                  ),
+                  AfListItem(
+                    title: '底部导航',
+                    onPressed: () { Navigator.pushNamed(context, '/tab_nav'); },
+                  ),
+                  AfListItem(
+                    title: '页面容器',
+                    onPressed: () { Navigator.pushNamed(context, '/page_controller'); },
                   ),
                 ],
               ),
@@ -48,11 +72,11 @@ class ListExample extends StatelessWidget {
               AfListGroup(
                 children: [
                   AfListItem(
-                    title: 'Toast',
+                    title: '轻提示',
                     onPressed: () {},
                   ),
                   AfListItem(
-                    title: 'Loading',
+                    title: '加载提示',
                     onPressed: () {
                       // AfUi.showLoading(text: '加载中...' );
                       // Future.delayed(Duration(seconds: 4), () {
@@ -61,7 +85,7 @@ class ListExample extends StatelessWidget {
                     },
                   ),
                   AfListItem(
-                    title: 'Modal',
+                    title: '对话框',
                     onPressed: () async {
                       // String result = await AfUi.showModal('更新提醒', '修复了几个问题，提升了用户体验');
                       // if (result == 'OnConfirmClick') {
