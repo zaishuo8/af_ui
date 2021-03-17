@@ -19,8 +19,12 @@ class PageControllerExample extends StatelessWidget {
                     onPressed: () { Navigator.pushNamed(context, '/page'); },
                   ),
                   AfListItem(
+                    title: '空页面',
+                    onPressed: () { Navigator.pushNamed(context, '/page_fault_empty'); },
+                  ),
+                  AfListItem(
                     title: '异常页面',
-                    onPressed: () { Navigator.pushNamed(context, '/page_fault'); },
+                    onPressed: () { Navigator.pushNamed(context, '/page_fault_error'); },
                   ),
                   AfListItem(
                     title: '骨架屏',
@@ -51,12 +55,22 @@ class PageExample extends StatelessWidget {
   }
 }
 
-class PageFaultExample extends StatelessWidget {
+class PageFaultErrorExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AfPage(
       nav: AfNav(title: '异常页面', pageContext: context),
       fault: AfFault.error(),
+    );
+  }
+}
+
+class PageFaultEmptyExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return AfPage(
+      nav: AfNav(title: '空页面', pageContext: context),
+      fault: AfFault.empty(description: '空页面空页面空页面空页面空页面空页面空页面空页面空页面空页面'),
     );
   }
 }

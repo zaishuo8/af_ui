@@ -70,7 +70,7 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 
-  # 统一字体 和 iconfont
+  # AfUi 需要的资源文件 统一字体文件，iconfont，图片资源文件
   fonts:
     - family: NotoSans
       fonts:
@@ -78,3 +78,6 @@ flutter:
     - family: IconFont
       fonts:
         - asset: packages/af_ui/assets/fonts/IconFont.ttf
+  assets:
+    - packages/af_ui/assets/images/error.png
+    - packages/af_ui/assets/images/search.png

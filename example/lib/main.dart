@@ -40,7 +40,8 @@ class ExampleApp extends StatelessWidget {
         '/nav': (context) => NavExample(),
         '/page_controller': (context) => PageControllerExample(),
         '/page': (context) => PageExample(),
-        '/page_fault': (context) => PageFaultExample(),
+        '/page_fault_error': (context) => PageFaultErrorExample(),
+        '/page_fault_empty': (context) => PageFaultEmptyExample(),
         '/page_skeleton': (context) => PageSkeletonExample(),
       },
     );

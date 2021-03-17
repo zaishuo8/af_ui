@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:af_ui/af_ui.dart';
 
@@ -133,22 +132,39 @@ class AfSkeleton extends StatelessWidget {
 
 }
 
+enum AfFaultType {
+  Empty,
+  Error,
+}
 /// 异常页面，空数据，错误页等等
 class AfFault extends StatelessWidget {
   
-  /// todo 图片资源属性
-  
+  /// 图片资源
+  static final images = <AfFaultType, AssetImage> {
+    AfFaultType.Empty: AssetImage('packages/af_ui/assets/images/search.png'),
+    AfFaultType.Error: AssetImage('packages/af_ui/assets/images/error.png'),
+  };
+
+  /// 类型
+  final AfFaultType afFaultType;
+
   /// 文案
   final String description;
   
   /// 通用构造函数
-  AfFault(this.description);
+  AfFault(this.afFaultType, this.description);
   
   /// 默认 空页面 构造函数
-  factory AfFault.empty({String description}) => AfFault(description ?? '暂无数据');
+  factory AfFault.empty({String description}) => AfFault(
+    AfFaultType.Empty,
+    description ?? '暂无数据',
+  );
 
   /// 默认 错误页面 构造函数
-  factory AfFault.error({String description}) => AfFault(description ?? '哎呀，出错了');
+  factory AfFault.error({String description}) => AfFault(
+    AfFaultType.Error,
+    description ?? '哎呀，出错了',
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -165,16 +181,15 @@ class AfFault extends StatelessWidget {
           Expanded(flex: 3, child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
+              Image(
+                image: images[afFaultType],
                 width: 160,
-                height: 160,
-                color: AfColor.FFFFFBE8,
               ),
               Container(
                 margin: EdgeInsets.only(top: 18),
                 child: Text(description,
                   style: AfFont.defaultStyle.copyWith(
-                    color: AfColor.Black4,
+                    color: AfColor.Black3,
                     fontSize: AfFont.Size5,
                   ),
                   textAlign: TextAlign.center,
